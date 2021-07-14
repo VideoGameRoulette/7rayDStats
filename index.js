@@ -483,26 +483,22 @@ function NemesisHPClassic(data) {
 
 // UNIVERSAL RESIDENT EVIL FUNCTIONS
 function GetTimer(data) {
-	if (HideIGT) { return; }
 	let mainContainer = document.getElementById("srtQueryData");
 	mainContainer.innerHTML += `<div class="title">IGT: <font color="#00FF00">${data.IGTFormattedString}</font></div>`;
 }
 
 function GetMoney(title, prefix, money) {
-	if (HideMoney) { return; }
 	let mainContainer = document.getElementById("srtQueryData");
 	mainContainer.innerHTML += `<div class="title">${title}<font color="#00FF00">${prefix + money}</font></div>`;
 }
 
 function GetDA(score) {
-	if (HideDA) { return; }
 	let mainContainer = document.getElementById("srtQueryData");
 	mainContainer.innerHTML += `<div class="title">DA Rank: <font color="#00FF00">${Math.floor(score / 1000)}</font></div>`;
 	mainContainer.innerHTML += `<div class="title">DA Score: <font color="#00FF00">${score}</font></div>`;
 }
 
 function GetDA2(score, rank) {
-	if (HideDA) { return; }
 	let mainContainer = document.getElementById("srtQueryData");
 	mainContainer.innerHTML += `<div class="title">DA Rank: <font color="#00FF00">${rank}</font></div>`;
 	mainContainer.innerHTML += `<div class="title">DA Score: <font color="#00FF00">${score}</font></div>`;
